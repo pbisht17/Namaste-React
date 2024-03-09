@@ -3,7 +3,9 @@
 ...
 # Parcel
     - Installation : npm i parcel -dev
-    - Running : npm parcel index.html
+    - Running :
+        - Local or Dev Buid : npm parcel index.html
+        - Production Buid : npm build parcel index.html
     - Functioning : 
         - Dev build
         - Local Server
