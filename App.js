@@ -8,7 +8,7 @@ const child = React.createElement(
       React.createElement('div', {id: 'child'}, 
          [  
             React.createElement('h1', {id: "heading"}, 'Hello Namaste React'),
-            React.createElement('h2', {id: "heading"}, 'Parcel do the hot reloading on by its own way'), // Siblings are shown using Array of React.createElement()
+            React.createElement('h2', {id: "heading"}, 'Parcel do'), // Siblings are shown using Array of React.createElement()
  ]
  ),
       React.createElement('div', {id: 'child'}, 
@@ -20,5 +20,7 @@ const child = React.createElement(
 )
 const parent = React.createElement('div', {id: 'parent'}, child )
 
+const jsxHeading = <h2>This is the namaste JS</h2>
+// JSX is not HTML in JS, this is HTML like syntax
 
 root.render(child)
