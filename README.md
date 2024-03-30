@@ -4,7 +4,7 @@
 # Parcel
     - Installation : npm i parcel -dev
     - Running :
-        - Local or Dev Buid : npx parcel index.html
+        - Local or Dev Buid : npx parcel index.html, we can put the same command in package.json as script
         - Production Buid : npx build parcel index.html
     - Functioning : 
         - Dev build

@@ -7,7 +7,7 @@ const child = React.createElement(
          [ 
       React.createElement('div', {id: 'child'}, 
          [  
-            React.createElement('h1', {id: "heading"}, 'Hello Namaste React'),
+            React.createElement('h1', {id: "heading"}, 'Hello Namaste React Pawan'),
             React.createElement('h2', {id: "heading"}, 'Parcel do the hot reloading on by its own way'), // Siblings are shown using Array of React.createElement()
  ]
  ),

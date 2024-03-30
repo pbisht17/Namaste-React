@@ -4,6 +4,7 @@
   "description": "This is the lecture 1",
   "main": "App.js",
   "scripts": {
+    "dev": "parcel index.html",
     "test": "jest"
   },
   "repository": {
