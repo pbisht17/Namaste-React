@@ -13,7 +13,7 @@
         - File Watching algorithm - written in C++
         - Caching - Faster Builds
         - Image Optimization
-        - Minification
+        - Minification for prodcution build
         - Bundling
         - Compressing
         - Consistent hashing
