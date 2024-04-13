@@ -1,18 +1,40 @@
 import  ReactDOM  from "react-dom/client";
-import React from "react";
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React, { Component } from "react";
 
-// React.createElement()   =>   React Element - JS Object  =>   HTMLElement(render)
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const heading = React.createElement('h1', {id: "heading"}, 'Hello Namaste React');
+// React Element (First letter is small)
 
-console.log(heading);
+const heading = <h1>This is the heading</h1>
 
-// JSX (transpilled before it reaches the JS ) - PARCEL - BABEL
+//React Functional Component
 
-// JSX => React.CreateElement()  =>   React Element - JS Object  =>   HTMLElement(render)
-const jsxHeading = <h2>This is the namaste JS</h2>
-// JSX is not HTML in JS, this is HTML like syntax
-console.log(jsxHeading)
+function title(){
+    return "some random title"
+}
 
-root.render(jsxHeading)
+function Tri(){
+    return (<h2>Tri Comp</h2>)
+}
+
+function Dummy() {
+        return <h2>This is Dummy</h2>
+}
+
+function Xyz() {
+    return (
+            <div>
+                <p>{title()}</p>
+                <p>{true}</p>
+                <p>{100 + 300}</p>
+                
+                
+                <Dummy />
+                <Tri />
+            </div>
+        );
+}
+
+
+
+root.render(<Xyz />);
