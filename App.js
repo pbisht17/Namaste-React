@@ -1,26 +1,18 @@
 import  ReactDOM  from "react-dom/client";
 import React from "react";
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const heading = React.createElement('h1', {id: "heading"}, 'Hello Namaste React');
-const child = React.createElement(
-     'div', { id: 'parent'},  
-         [ 
-      React.createElement('div', {id: 'child'}, 
-         [  
-            React.createElement('h1', {id: "heading"}, 'Hello Namaste React'),
-            React.createElement('h2', {id: "heading"}, 'Parcel do'), // Siblings are shown using Array of React.createElement()
- ]
- ),
-      React.createElement('div', {id: 'child'}, 
-    [  
-            React.createElement('h1', {id: "heading"}, 'Hello Namaste React'),
-            React.createElement('h2', {id: "heading"}, 'Hello Namaste React h2'), // Siblings are shown using Array of React.createElement()
-    ]) 
-]
-)
-const parent = React.createElement('div', {id: 'parent'}, child )
 
+// React.createElement()   =>   React Element - JS Object  =>   HTMLElement(render)
+
+const heading = React.createElement('h1', {id: "heading"}, 'Hello Namaste React');
+
+console.log(heading);
+
+// JSX (transpilled before it reaches the JS ) - PARCEL - BABEL
+
+// JSX => React.CreateElement()  =>   React Element - JS Object  =>   HTMLElement(render)
 const jsxHeading = <h2>This is the namaste JS</h2>
 // JSX is not HTML in JS, this is HTML like syntax
+console.log(jsxHeading)
 
-root.render(child)
+root.render(jsxHeading)
