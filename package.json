@@ -2,7 +2,7 @@
   "name": "namaste-react-basics",
   "version": "1.0.0",
   "description": "This is the lecture 1",
-  "main": "App.js",
+ 
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
