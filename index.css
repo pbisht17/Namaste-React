@@ -36,6 +36,7 @@
     background-color: rgb(244, 244, 244);
     cursor: pointer;
     border-radius: 5px;
+    margin: 0 1rem;
 }
 
 .res-card:hover {

@@ -25,3 +25,14 @@
         - Tree Shaking - Remove Unused code 
         - Different dev and Production Builds
 
+
+Two types of Import/Export  
+
+- Default Import/Export 
+    export default Component
+    import Component from "path"
+
+- Named Import/ Export 
+    export Const Component
+    import { Component } from "path"
+
