@@ -6,6 +6,7 @@ import { resList } from '../utils/mockData'
 // Not using keys( Not recommended) <<<<<<< Index as key( BAD PRACTICE, it is like a last resort)  <<<<<<< unique id ( BEST PRACTICE )
 // State variable
 const Body = () => {
+    console.log(useState({}))
     const [listOfRestaurant, setListOfRestaurant] = useState([
         {
             id: "2333",
@@ -50,7 +51,7 @@ const Body = () => {
             etd:"38",
         }, 
     ])
-
+    
     return <div className="body">
         <div className="filter">
             <button onClick={() => {
